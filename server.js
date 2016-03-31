@@ -15,7 +15,7 @@ var webServer = https.createServer(
 	key:  fs.readFileSync("./key.pem"),
 	cert: fs.readFileSync("./cert.pem")
 },
-httpApp).listen(8443);
+httpApp).listen(8080);
 
 // Start Socket.io so it attaches itself to Express server
 var socketServer = io.listen(webServer, {"log level":1});
